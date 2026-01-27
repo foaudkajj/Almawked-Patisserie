@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const img = document.createElement('img');
             img.src = product.image;
             img.alt = product.name;
+            img.loading = 'lazy'; // Lazy load images
             // Add error handling for image 404
             img.onerror = () => {
                 imgPreview.classList.add('no-image');
