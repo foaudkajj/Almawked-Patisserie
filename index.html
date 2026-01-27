@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>معجنات الموقد (Al Mawked Patisserie)</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Optional: Add a nice font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Tajawal", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <!-- Placeholder for logo. Replace 'images/logo.png' with your actual logo file. -->
+        <img src="images/logo.png" alt="شعار معجنات الموقد" />
+      </div>
+      <h1 class="title">معجنات الموقد</h1>
+    </header>
+
+    <div class="contact-info">
+      <a href="https://wa.me/963994496920" target="_blank">
+        <span>واتساب</span>
+        <i class="fab fa-whatsapp" style="font-size: 1.2rem; color: green"></i>
+      </a>
+      <a href="https://www.instagram.com/mawked_patisserie/" target="_blank">
+        <span>إنستغرام</span>
+        <i
+          class="fab fa-instagram"
+          style="font-size: 1.2rem; color: orange"
+        ></i>
+      </a>
+      <a href="tel:+963994496920">
+        <span>اتصال</span>
+        <i class="fas fa-phone-flip" style="font-size: 1.2rem"></i>
+      </a>
+    </div>
+
+    <div class="menu-container">
+      <!-- <h2>القائمة</h2> -->
+      <div id="menu-wrapper">
+        <!-- Menu items will be injected here by JavaScript -->
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 معجنات الموقد. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/963994496920" class="float-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp my-float"></i>
+    </a>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="modal">
+      <span class="close-modal">&times;</span>
+      <img class="modal-content" id="modal-image" />
+      <div id="caption"></div>
+    </div>
+
+    <!-- Load data first -->
+    <script src="data/products.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

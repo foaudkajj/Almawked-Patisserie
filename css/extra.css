@@ -1,0 +1,19 @@
+.category-title {
+    color: var(--primary-color);
+    margin: 20px 0 10px 0;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.subcategory-title {
+    color: var(--text-color);
+    margin: 15px 0 10px 0;
+    font-size: 1.2rem;
+    padding-right: 10px;
+    border-right: 4px solid var(--primary-color);
+}
+
+.category-group {
+    margin-bottom: 30px;
+}

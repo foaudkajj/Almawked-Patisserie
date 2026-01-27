@@ -1,0 +1,198 @@
+:root {
+    --primary-color: #d4a373;
+    --secondary-color: #faedcd;
+    --text-color: #333;
+    --bg-color: #fefae0;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Tahoma', 'Segoe UI', Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    direction: rtl;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--white);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-container img {
+    max-width: 150px;
+    height: auto;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.contact-info {
+    margin: 20px 0;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--secondary-color);
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 0 10px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-info a:hover {
+    color: var(--primary-color);
+}
+
+.menu-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.menu-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.menu-item {
+    background: var(--white);
+    /* margin-bottom: 15px; Removing margin as gap handles it, but creating space if fallback */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: relative;
+    transition: transform 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.item-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.item-desc {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 5px;
+}
+
+.item-price {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-left: 15px;
+    white-space: nowrap;
+}
+
+/* Image Preview Styles */
+.image-preview {
+    display: block;
+    position: static;
+    transform: none;
+    z-index: 1;
+    border: none;
+    box-shadow: none;
+    background: var(--white);
+    border-radius: 8px;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Fallback when no image */
+.image-preview.no-image {
+    /* display: flex; Removed to prevent it from showing by default */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    color: #ccc;
+    font-size: 0.8rem;
+}
+
+/* Desktop Hover - REMOVED HOVER IMAGE LOGIC */
+
+
+/* Mobile Click/Toggle */
+@media (max-width: 768px) {
+    .menu-list {
+        grid-template-columns: 1fr; 
+    }
+
+    /* REMOVED ACTIVE LOGIC */
+    
+    .menu-item {
+        /* Keep flex row on mobile too? Or stack? 
+           Let's keep row for a nice list look with image on side */
+        flex-direction: row; 
+        align-items: center;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Category Styles */
+.category-title {
+    color: var(--primary-color);
+    margin: 20px 0 10px 0;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.subcategory-title {
+    color: var(--text-color);
+    margin: 15px 0 10px 0;
+    font-size: 1.2rem;
+    padding-right: 10px;
+    border-right: 4px solid var(--primary-color);
+}
+
+.category-group {
+    margin-bottom: 30px;
+}
