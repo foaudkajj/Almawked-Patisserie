@@ -24,7 +24,7 @@ header {
     background-color: var(--primary-color); /* Fallback color */
     background-image: url('../images/logo-background.png'); /* Replace with your image file name */
     background-size: cover;
-    background-position: center;
+    background-position: left top;
     background-repeat: no-repeat;
     padding: 40px;
     text-align: center;
