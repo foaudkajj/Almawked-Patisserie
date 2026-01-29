@@ -47,19 +47,24 @@ header {
 
 .contact-info {
     /* margin: 20px 0; */
-    text-align: center;
-    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Create space between items */
+    padding: 15px;
     background-color: var(--secondary-color);
 }
 
 .contact-info a {
     text-decoration: none;
     color: var(--text-color);
-    margin: 0 10px;
+    /* margin: 0 10px; Replaced by gap */
     font-weight: bold;
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
+    padding: 5px; /* Improves touch target */
 }
 
 .contact-info a:hover {
@@ -118,7 +123,7 @@ header {
     font-weight: bold;
     color: var(--primary-color);
     font-size: 1.1rem;
-    margin-left: 15px;
+    margin-top: 5px; /* Added separation from name */
     white-space: nowrap;
 }
 

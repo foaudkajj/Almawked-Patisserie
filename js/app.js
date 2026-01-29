@@ -95,6 +95,12 @@ document.addEventListener('DOMContentLoaded', () => {
         nameSpan.textContent = product.name;
         infoWrapper.appendChild(nameSpan);
 
+        // Price Content
+        const priceSpan = document.createElement('div');
+        priceSpan.className = 'item-price';
+        priceSpan.textContent = product.price ? product.price + ' ل.س' : '';
+        infoWrapper.appendChild(priceSpan);
+
         // Description
         if (product.description) {
             const descSpan = document.createElement('div');
@@ -102,11 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
             descSpan.textContent = product.description;
             infoWrapper.appendChild(descSpan);
         }
-
-        // Price Content
-        const priceSpan = document.createElement('span');
-        priceSpan.className = 'item-price';
-        priceSpan.textContent = product.price ? product.price + ' ل.س' : '';
         
         // Image Container
         const imgPreview = document.createElement('div');
@@ -139,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         listItem.appendChild(infoWrapper);
-        listItem.appendChild(priceSpan);
+        // listItem.appendChild(priceSpan); // Moved to infoWrapper
         listItem.appendChild(imgPreview);
 
         /* Removed Click Event for Mobile/Toggle */

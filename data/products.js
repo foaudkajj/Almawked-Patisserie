@@ -7,6 +7,36 @@ window.productsData = [
     title: "القائمة الرئيسية",
     subcategories: [
       {
+        title: "منتجات صغيرة",
+        items: [
+          {
+            name: "سوكسيه",
+            price: "3,000",
+            image: "images/small/sokse.png",
+          },
+          {
+            name: "دنش",
+            price: "6,000",
+            image: "images/small/donesh.png",
+          },
+          {
+            name: "تارت",
+            price: "3,000",
+            image: "images/small/tart.png",
+          },
+          {
+            name: "كلير",
+            price: "3,000",
+            image: "images/small/eclair.png",
+          },
+          {
+            name: "راس العبد",
+            price: "3,000",
+            image: "images/small/ras.png",
+          },
+        ],
+      },
+      {
         title: "تشيز كيك",
         items: [
           {
@@ -35,28 +65,33 @@ window.productsData = [
         title: "بتيفور",
         items: [
           {
-            name: "دونات",
-            price: "15,000",
-            image: "images/petit-four/snickers.png",
+            name: "دونات محشي",
+            price: "40,000",
+            // image: "images/petit-four/snickers.png",
+          },
+          {
+            name: "دونات مغطس",
+            price: "40,000",
+            // image: "images/petit-four/snickers.png",
           },
           {
             name: "أصابع مغطسة",
-            price: "15,000",
+            price: "40,000",
             image: "images/petit-four/fingers.png",
           },
           {
             name: "اليزابيث",
-            price: "15,000",
+            price: "40,000",
             image: "images/petit-four/elezabith.png",
           },
           {
             name: "تارت جوز الهند",
-            price: "15,000",
+            price: "40,000",
             image: "images/petit-four/tart.png",
           },
           {
             name: "سنيكرز",
-            price: "12,000",
+            price: "40,000",
             image: "images/petit-four/snickers.png",
           },
         ],
@@ -66,24 +101,24 @@ window.productsData = [
   {
     title: "كرواسان",
     items: [
-      { name: "بقلاوة", price: "5,000", image: "images/croissant/baklava.png" },
-      { name: "جبنة", price: "5,000", image: "images/croissant/cheese.png" },
+      { name: "بقلاوة", price: "6,000", image: "images/croissant/baklava.png" },
+      { name: "جبنة", price: "4,000", image: "images/croissant/cheese.png" },
       {
         name: "تشيز كيك فريز",
-        price: "5,000",
+        price: "6,000",
         image: "images/croissant/cheese-cake-straw.png",
       },
       {
         name: "شوكولا",
-        price: "5,000",
+        price: "6,000",
         image: "images/croissant/chocolate.png",
       },
       {
         name: "تشيز كيك اوريو",
-        price: "5,000",
+        price: "6,000",
         image: "images/croissant/cheese-cake-oreo.png",
       },
-      { name: "شراب اللوز", price: "5,000", image: "images/croissant/loz.png" },
+      { name: "شراب اللوز", price: "6,000", image: "images/croissant/loz.png" },
     ],
   },
   {
@@ -118,17 +153,17 @@ window.productsData = [
   },
   {
     title: "قوالب",
-            description:
-          "يتوفر قوالب صغير ل 6 أشخاص, وسط ل 8 أشخاص و كبير ل 12 شخص حسب الطلب. الصغير ب 60,000 ل.س الوسط ب 80,000 ل.س و الكبير ب 120,000 ل.س",
+    description:
+      "يتوفر قوالب صغيرة ل 6 أشخاص, وسط ل 8 أشخاص و كبيرة ل 12 شخص حسب الطلب. الصغير ب 60,000 ل.س الوسط ب 80,000 ل.س و الكبير ب 120,000 ل.س",
     items: [
       {
         name: "جلاكسي",
-        price: "10,000",
+        price: "-",
         image: "images/cake/galaxy.png",
       },
       {
         name: "كندر",
-        price: "10,000",
+        price: "-",
         image: "images/cake/kinder.png",
       },
       {
